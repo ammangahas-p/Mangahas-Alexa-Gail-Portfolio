@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf8fc" />
+    <meta
+      name="description"
+      content="Portfolio of Alexa Gail M. Mangahas, an IT Student from Calamba City, Laguna."
+    />
+    <link rel="icon" href="assets/folio-mark.svg" type="image/svg+xml" />
+    <title>Alexa Gail M. Mangahas — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>
+      try {
+        if (localStorage.getItem('portfolio-theme') === 'dark') {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      } catch {
+        // Light mode remains the fallback when browser storage is unavailable.
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Alexa Gail M. Mangahas, home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="brand-name">ALEXA MANGHAS<span class="brand-dot">.</span></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false">
+            <span class="theme-toggle-icon" id="theme-toggle-icon" aria-hidden="true">☾</span>
+            <span>Dark mode</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-pad" id="home" aria-labelledby="hero-title">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> PORTFOLIO / 2026</p>
+            <p class="hero-kicker">IT Student</p>
+            <h1 id="hero-title">Thoughtful digital work,<br /><span>built with intent.</span></h1>
+            <p class="hero-intro">
+              I’m <strong>Alexa Gail M. Mangahas</strong> — an IT Student from Calamba City, Laguna, building practical
+              skills through technology, digital projects, and hands-on work experience.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View selected projects <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#cv">View my CV <span aria-hidden="true">↘</span></a>
+            </div>
+            <p class="hero-note"><span class="mono-label">CURRENT FOCUS</span> Information technology and continuous learning.</p>
+          </div>
+
+          <div class="hero-visual" role="img" aria-label="Decorative portfolio interface preview">
+            <div class="visual-topline"><span>FIELD NOTES / 001</span><span>DESIGN × DEVELOPMENT</span></div>
+            <div class="visual-sheet">
+              <div class="sheet-crosshair crosshair-one" aria-hidden="true"></div>
+              <div class="sheet-crosshair crosshair-two" aria-hidden="true"></div>
+              <div class="sheet-heading">
+                <span class="sheet-index">01 — 04</span>
+                <span class="sheet-rule"></span>
+              </div>
+              <div class="sheet-graphic" aria-hidden="true">
+                <div class="graphic-orbit orbit-one"></div>
+                <div class="graphic-orbit orbit-two"></div>
+                <div class="graphic-core has-photo"><img src="assets/profile.jpg" alt="Portrait of Alexa Gail M. Mangahas" width="500" height="500" decoding="async" /></div>
+                <span class="graphic-label label-north">IDEA</span>
+                <span class="graphic-label label-east">FORM</span>
+                <span class="graphic-label label-south">FUNCTION</span>
+              </div>
+              <div class="sheet-caption">
+                <span>DESIGNING FOR PEOPLE</span>
+                <span class="caption-number">24° 18′</span>
+              </div>
+            </div>
+            <div class="visual-footline"><span>INDEPENDENT CREATOR</span><span>BASED IN CALAMBA, LAGUNA, PHILIPPINES</span></div>
+          </div>
+        </div>
+        <div class="hero-index" aria-hidden="true">SCROLL TO EXPLORE <span>↓</span></div>
+      </section>
+
+      <section class="about-section section-pad" id="about" aria-labelledby="about-title">
+        <div class="container about-layout">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-number">01</span> A LITTLE CONTEXT</p>
+            <h2 class="section-title" id="about-title">Good work starts<br />with <span>good questions.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I’m Alexa Gail M. Mangahas, an IT Student based in Calamba City, Laguna. I’m developing my foundation
+              in information technology while building confidence through digital projects, continuous learning, and
+              real-world production experience.
+            </p>
+            <div class="profile-facts" aria-label="Basic information">
+              <div><span class="mono-label">PROFESSIONAL TITLE</span><strong>IT Student</strong></div>
+              <div><span class="mono-label">LOCATION</span><strong>Calamba City, Laguna</strong></div>
+              <div><span class="mono-label">EXPERIENCE</span><strong>Wiring assembly · 2022–2023</strong></div>
+            </div>
+            <div class="about-details">
+              <div class="about-detail-block">
+                <p class="mono-label">BASIC INFORMATION</p>
+                <dl>
+                  <div><dt>Full name</dt><dd>Alexa Gail M. Mangahas</dd></div>
+                  <div><dt>Email</dt><dd><a href="mailto:ammangahas@ccc.edu.ph">ammangahas@ccc.edu.ph</a></dd></div>
+                  <div><dt>Contact number</dt><dd><a href="tel:+639659568241">0965 956 8241</a></dd></div>
+                  <div><dt>Previous occupation</dt><dd>Production at Yazaki-Torres Manufacturing Inc.</dd></div>
+                </dl>
+              </div>
+              <div class="about-detail-block">
+                <p class="mono-label">EDUCATIONAL BACKGROUND</p>
+                <ul class="education-list">
+                  <li><strong>St. John and Paul Educational Foundation Inc.</strong><span>Grade 12 · 2020–2021</span></li>
+                  <li><strong>PWU-CDEC</strong><span>Grade 11 · 2019–2020</span></li>
+                  <li><strong>Eduardo Barretto Sr. Integrated School</strong><span>High school · 2016–2019</span></li>
+                  <li><strong>Eduardo Barretto Sr. Elementary School</strong><span>Elementary · 2010–2016</span></li>
+                </ul>
+              </div>
+            </div>
+            <a class="text-link" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cv-section section-pad" id="cv" aria-labelledby="cv-title">
+        <div class="container">
+          <div class="cv-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-number">02</span> PROFILE DOCUMENT</p>
+              <h2 class="section-title" id="cv-title">My CV,<br /><span>kept current.</span></h2>
+            </div>
+            <div class="cv-actions">
+              <button class="button button-outline" id="print-cv" type="button">Print / save PDF <span aria-hidden="true">↗</span></button>
+              <a class="button button-outline" href="#certificates">View certificates <span aria-hidden="true">↘</span></a>
+            </div>
+          </div>
+
+          <div class="cv-card" id="cv-card">
+            <div class="cv-card-header">
+              <div class="cv-identity">
+                <img class="cv-photo" src="assets/profile.jpg" alt="Portrait of Alexa Gail M. Mangahas" width="500" height="500" decoding="async" />
+                <div>
+                  <p class="cv-kicker">CURRICULUM VITAE</p>
+                  <h3 data-editable="name">Alexa Gail M. Mangahas</h3>
+                  <p class="cv-role" data-editable="role">IT Student</p>
+                </div>
+              </div>
+              <div class="cv-contact" aria-label="CV contact details">
+                <a href="mailto:ammangahas@ccc.edu.ph">ammangahas@ccc.edu.ph</a>
+                <span data-editable="location">Calamba City, Laguna</span>
+                <a href="tel:+639659568241" data-editable="phone">0965 956 8241</a>
+              </div>
+            </div>
+            <div class="cv-grid">
+              <div class="cv-column">
+                <div class="cv-block">
+                  <h4>Profile</h4>
+                  <p data-editable="summary">IT Student from Calamba City, Laguna, developing practical skills in information technology through digital projects, continuous learning, and hands-on production experience.</p>
+                </div>
+                <div class="cv-block">
+                  <h4>Experience</h4>
+                  <ul class="cv-list" data-editable="experience">
+                    <li><strong>Production — Yazaki-Torres Manufacturing Inc.</strong><span>Wiring assembly · 2022–2023</span></li>
+                  </ul>
+                </div>
+                <div class="cv-block">
+                  <h4>Education</h4>
+                  <ul class="cv-list" data-editable="education">
+                    <li><strong>St. John and Paul Educational Foundation Inc.</strong><span>Grade 12 · 2020–2021</span></li>
+                    <li><strong>PWU-CDEC</strong><span>Grade 11 · 2019–2020</span></li>
+                    <li><strong>Eduardo Barretto Sr. Integrated School</strong><span>High school · 2016–2019</span></li>
+                    <li><strong>Eduardo Barretto Sr. Elementary School</strong><span>Elementary · 2010–2016</span></li>
+                  </ul>
+                </div>
+                <div class="cv-block">
+                  <h4>Selected projects</h4>
+                  <ul class="cv-list" data-editable="projects">
+                    <li><strong>Lumina Identity System</strong><span>Brand identity · 2026</span></li>
+                    <li><strong>Urban Threads Campaign</strong><span>Campaign design · 2026</span></li>
+                    <li><strong>Cozy Cove Café Identity</strong><span>Brand concept · 2026</span></li>
+                    <li><strong>Portfolio Wireframe &amp; Prototype</strong><span>UI/UX design · 2026</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cv-column">
+                <div class="cv-block">
+                  <h4>Skills &amp; tools</h4>
+                  <p data-editable="skills">Brand identity · Campaign design · UI/UX design · Wireframing · Typography · Canva · Figma · GIMP</p>
+                </div>
+                <div class="cv-block">
+                  <h4>Certificates</h4>
+                  <ul class="cv-list cv-certificates" data-editable="certificates">
+                    <li><strong>Digital Safety and Security Awareness</strong><span>Networking Academy through Cisco Networking Academy · August 2026</span></li>
+                    <li><strong>Events and Logistics Committee Member</strong><span>Supreme Student Council · May 2026</span></li>
+                    <li><strong>Class Representative Recognition</strong><span>Information Technology Society · January 2025</span></li>
+                    <li><strong>Silakbo 2026: A Week of Love for Arts</strong><span>Facilitator · February 2026</span></li>
+                    <li><strong>CCC Sports Festival 2026</strong><span>Facilitator · April 2026</span></li>
+                    <li><strong>ASIN AT ILAW 2026: Breaking News</strong><span>Facilitator · March 2026</span></li>
+                    <li><strong>National Women’s Month Celebration</strong><span>Facilitator · March 2026</span></li>
+                    <li><strong>KAPEACEtahan 2025: Peace Fair</strong><span>Organizer · September 2025</span></li>
+                    <li><strong>KAUGMAON Year 3: Kickstart 2026</strong><span>Facilitator · January 2026</span></li>
+                    <li><strong>Financial Literacy Week 2025</strong><span>Organizer · November 2025</span></li>
+                    <li><strong>SANDIGAN: From Burnout to Breakthrough</strong><span>Facilitator · November 2025</span></li>
+                    <li><strong>Clickwise: Facts In, Fakes Out</strong><span>Facilitator · November 2025</span></li>
+                    <li><strong>HIV Awareness Seminar and Free HIV Screening</strong><span>Organizer · October 2025</span></li>
+                    <li><strong>TANGLAW: Teachers’ Recognition Week</strong><span>Organizer · October 2025</span></li>
+                    <li><strong>Alay Lakad 2025</strong><span>Volunteer · October 2025</span></li>
+                    <li><strong>Sex Education Seminar Workshop: Beyond the Birds and Bees</strong><span>Organizer · September 2025</span></li>
+                    <li><strong>Sertipiko ng Pagkilala: Buwan ng Wika 2025</strong><span>Program staff · August 2025</span></li>
+                    <li><strong>Banyuhay 2025</strong><span>Organizer · August 2025</span></li>
+                  </ul>
+                </div>
+                <div class="cv-block">
+                  <h4>Online</h4>
+                  <div class="cv-socials">
+                    <a href="https://www.linkedin.com/in/alexa-gail-manghas-ba1543430?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <a href="https://web.facebook.com/alexagail.mangahas" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+                    <a href="https://www.instagram.com/kys.ero?exln=MTI0M3c1ajZxbnRrcw==" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="certificate-gallery" id="certificates" aria-labelledby="certificates-title">
+            <div class="certificate-gallery-heading">
+              <div>
+                <p class="eyebrow"><span class="eyebrow-number">03</span> DOCUMENTATION</p>
+                <h3 id="certificates-title">Certificate <span>gallery.</span></h3>
+              </div>
+              <p>Click any certificate to open a larger view.</p>
+            </div>
+            <div class="certificate-grid">
+              <figure><a href="assets/certificates/certificate-18.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-18.jpg" alt="Cisco Networking Academy certificate for Digital Safety and Security Awareness" loading="lazy" decoding="async" /></a><figcaption>Digital Safety and Security Awareness · Cisco Networking Academy · August 2026</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-01.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-01.jpg" alt="Certificate of recognition for facilitating Silakbo 2026" loading="lazy" decoding="async" /></a><figcaption>Silakbo 2026 · Facilitator · February 2026</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-02.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-02.jpg" alt="Certificate of recognition for volunteering at Alay Lakad 2025" loading="lazy" decoding="async" /></a><figcaption>Alay Lakad 2025 · Volunteer · October 2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-03.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-03.jpg" alt="Sertipiko ng Pagkilala for Buwan ng Wika 2025" loading="lazy" decoding="async" /></a><figcaption>Buwan ng Wika 2025 · Program staff · August 2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-04.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-04.jpg" alt="Certificate of recognition for facilitating CCC Sports Festival 2026" loading="lazy" decoding="async" /></a><figcaption>CCC Sports Festival 2026 · Facilitator · April 2026</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-05.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-05.jpg" alt="Certificate of recognition for organizing Banyuhay 2025" loading="lazy" decoding="async" /></a><figcaption>Banyuhay 2025 · Organizer · August 2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-06.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-06.jpg" alt="Certificate of recognition for facilitating Clickwise" loading="lazy" decoding="async" /></a><figcaption>Clickwise · Facilitator · November 2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-07.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-07.jpg" alt="Certificate of recognition for organizing Financial Literacy Week 2025" loading="lazy" decoding="async" /></a><figcaption>Financial Literacy Week 2025 · Organizer · November 2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-08.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-08.jpg" alt="Certificate of recognition for facilitating SANDIGAN" loading="lazy" decoding="async" /></a><figcaption>SANDIGAN · Facilitator · November 2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-09.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-09.jpg" alt="Certificate of recognition for organizing a sex education seminar workshop" loading="lazy" decoding="async" /></a><figcaption>Beyond the Birds and Bees · Organizer · September 2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-10.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-10.jpg" alt="Certificate of recognition for facilitating National Women's Month Celebration" loading="lazy" decoding="async" /></a><figcaption>National Women’s Month · Facilitator · March 2026</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-11.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-11.jpg" alt="Certificate of recognition for organizing KAPEACEtahan 2025 Peace Fair" loading="lazy" decoding="async" /></a><figcaption>KAPEACEtahan 2025 · Organizer · September 2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-12.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-12.jpg" alt="Certificate of recognition for organizing Teachers' Recognition Week" loading="lazy" decoding="async" /></a><figcaption>TANGLAW · Organizer · October 2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-13.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-13.jpg" alt="Certificate of recognition for facilitating ASIN AT ILAW 2026" loading="lazy" decoding="async" /></a><figcaption>ASIN AT ILAW 2026 · Facilitator · March 2026</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-14.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-14.jpg" alt="Certificate of recognition for facilitating KAUGMAON Year 3" loading="lazy" decoding="async" /></a><figcaption>KAUGMAON Year 3 · Facilitator · January 2026</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-15.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-15.jpg" alt="Certificate of recognition for organizing an HIV Awareness Seminar and Free HIV Screening" loading="lazy" decoding="async" /></a><figcaption>HIV Awareness Seminar · Organizer · October 2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-16.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-16.jpg" alt="Certificate of recognition for Class Representative" loading="lazy" decoding="async" /></a><figcaption>Class Representative · Academic Year 2024–2025</figcaption></figure>
+              <figure><a href="assets/certificates/certificate-17.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/certificate-17.jpg" alt="Certificate of recognition for Events and Logistics Committee Member of the Supreme Student Council" loading="lazy" decoding="async" /></a><figcaption>Supreme Student Council Committee Member · May 2026</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="projects-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-number">02</span> SELECTED WORK</p>
+              <h2 class="section-title" id="projects-title">A few things<br /><span>I’ve made.</span></h2>
+            </div>
+            <p class="projects-intro">Course projects across brand identity, campaign design, and interface prototyping. Swipe or use the arrows to browse.</p>
+          </div>
+
+          <div class="project-tools" role="search" aria-label="Search and filter projects">
+            <label class="search-field" for="project-search">
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <span class="visually-hidden">Search projects by title, category, year, or technology</span>
+              <input id="project-search" type="search" placeholder="Search projects, tools, years…" autocomplete="off" />
+              <kbd>/</kbd>
+            </label>
+            <div class="filter-list" id="category-filters" role="group" aria-label="Filter by project category"></div>
+          </div>
+
+          <div class="carousel-toolbar">
+            <p class="results-status" id="results-status" aria-live="polite"></p>
+            <div class="carousel-controls" role="group" aria-label="Project carousel controls">
+              <span class="carousel-position" id="carousel-position" aria-live="polite">01 / 04</span>
+              <button class="carousel-button" id="project-prev" type="button" aria-label="Previous project" aria-controls="project-grid" disabled><span aria-hidden="true">←</span></button>
+              <button class="carousel-button" id="project-next" type="button" aria-label="Next project" aria-controls="project-grid"><span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+          <div class="project-grid" id="project-grid" role="region" aria-label="Featured projects" aria-roledescription="carousel" aria-describedby="carousel-help" tabindex="0"></div>
+          <p class="visually-hidden" id="carousel-help">Use the previous and next project buttons, swipe, or scroll horizontally to browse the project cards.</p>
+          <noscript><p class="noscript-note">Enable JavaScript to view the project cards and use search filters.</p></noscript>
+        </div>
+      </section>
+
+      <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-panel">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-number">03</span> HAVE A GOOD ONE IN MIND?</p>
+            <h2 id="contact-title">Let’s make<br /><span>something useful.</span></h2>
+          </div>
+          <div class="contact-side">
+            <p>Have a project, collaboration, or good idea in mind? I’d love to hear from you.</p>
+              <a class="button button-light" href="mailto:ammangahas@ccc.edu.ph">Email me <span aria-hidden="true">↗</span></a>
+              <span class="mono-label">AMMANGAHAS@CCC.EDU.PH · 0965 956 8241</span>
+            <nav class="social-links" aria-label="Social links">
+              <a href="https://web.facebook.com/alexagail.mangahas" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a>
+              <a href="https://www.linkedin.com/in/alexa-gail-mangahas-ba1543430?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a href="https://www.instagram.com/kys.ero?exln=MTI0M3c1ajZxbnRrcw==" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+            </nav>
+          </div>
+          <span class="contact-mark" aria-hidden="true">↗</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="brand-name">ALEXA MANGHAS<span class="brand-dot">.</span></span>
+        </a>
+        <p>© <span id="current-year">2026</span> Alexa Gail M. Mangahas. Built with care.</p>
+        <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
