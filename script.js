@@ -65,9 +65,50 @@ const navigation = document.querySelector('#primary-navigation');
 const themeToggle = document.querySelector('#theme-toggle');
 const themeIcon = document.querySelector('#theme-toggle-icon');
 const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+const editCvButton = document.querySelector('#edit-cv');
 const printCvButton = document.querySelector('#print-cv');
+const cvEditNote = document.querySelector('#cv-edit-note');
+const editableCvFields = document.querySelectorAll('[data-editable]');
 
 let activeCategory = 'All';
+
+function setCvEditing(isEditing) {
+  editableCvFields.forEach((field) => {
+    field.contentEditable = String(isEditing);
+    field.classList.toggle('is-editable', isEditing);
+  });
+  editCvButton?.setAttribute('aria-pressed', String(isEditing));
+  if (editCvButton) editCvButton.innerHTML = isEditing ? 'Save CV <span aria-hidden="true">✓</span>' : 'Edit CV <span aria-hidden="true">✎</span>';
+  if (cvEditNote) cvEditNote.textContent = isEditing
+    ? 'Editing is on. Update the highlighted text, then choose “Save CV”.'
+    : 'Select “Edit CV” to update the text. Your changes are saved in this browser.';
+}
+
+try {
+  const savedCv = JSON.parse(window.localStorage.getItem('portfolio-cv') || '{}');
+  editableCvFields.forEach((field) => {
+    const key = field.dataset.editable;
+    if (key && savedCv[key]) field.innerHTML = savedCv[key];
+  });
+} catch {
+  // The starter CV remains available when browser storage is unavailable.
+}
+
+editCvButton?.addEventListener('click', () => {
+  const isEditing = editCvButton.getAttribute('aria-pressed') === 'true';
+  if (isEditing) {
+    const savedCv = {};
+    editableCvFields.forEach((field) => {
+      if (field.dataset.editable) savedCv[field.dataset.editable] = field.innerHTML;
+    });
+    try {
+      window.localStorage.setItem('portfolio-cv', JSON.stringify(savedCv));
+    } catch {
+      // The CV still updates for this page even if storage is unavailable.
+    }
+  }
+  setCvEditing(!isEditing);
+});
 
 printCvButton?.addEventListener('click', () => window.print());
 
