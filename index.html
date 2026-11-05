@@ -50,6 +50,7 @@
         </button>
 
         <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+          <a class="nav-home" href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
@@ -93,7 +94,7 @@
               <div class="sheet-graphic" aria-hidden="true">
                 <div class="graphic-orbit orbit-one"></div>
                 <div class="graphic-orbit orbit-two"></div>
-                <div class="graphic-core has-photo"><img src="assets/profile.jpg" alt="Portrait of Alexa Gail M. Mangahas" width="500" height="500" decoding="async" /></div>
+                <div class="graphic-core"><span>A</span></div>
                 <span class="graphic-label label-north">IDEA</span>
                 <span class="graphic-label label-east">FORM</span>
                 <span class="graphic-label label-south">FUNCTION</span>
@@ -159,6 +160,7 @@
               <h2 class="section-title" id="cv-title">My CV,<br /><span>kept current.</span></h2>
             </div>
             <div class="cv-actions">
+              <button class="button button-primary" id="edit-cv" type="button" aria-pressed="false">Edit CV <span aria-hidden="true">✎</span></button>
               <button class="button button-outline" id="print-cv" type="button">Print / save PDF <span aria-hidden="true">↗</span></button>
               <a class="button button-outline" href="#certificates">View certificates <span aria-hidden="true">↘</span></a>
             </div>
@@ -166,13 +168,10 @@
 
           <div class="cv-card" id="cv-card">
             <div class="cv-card-header">
-              <div class="cv-identity">
-                <img class="cv-photo" src="assets/profile.jpg" alt="Portrait of Alexa Gail M. Mangahas" width="500" height="500" decoding="async" />
-                <div>
-                  <p class="cv-kicker">CURRICULUM VITAE</p>
-                  <h3 data-editable="name">Alexa Gail M. Mangahas</h3>
-                  <p class="cv-role" data-editable="role">IT Student</p>
-                </div>
+              <div>
+                <p class="cv-kicker">CURRICULUM VITAE</p>
+                <h3 data-editable="name">Alexa Gail M. Mangahas</h3>
+                <p class="cv-role" data-editable="role">IT Student</p>
               </div>
               <div class="cv-contact" aria-label="CV contact details">
                 <a href="mailto:ammangahas@ccc.edu.ph">ammangahas@ccc.edu.ph</a>
@@ -249,6 +248,7 @@
                 </div>
               </div>
             </div>
+            <p class="cv-edit-note" id="cv-edit-note">Select “Edit CV” to update the text. Your changes are saved in this browser.</p>
           </div>
 
           <div class="certificate-gallery" id="certificates" aria-labelledby="certificates-title">
